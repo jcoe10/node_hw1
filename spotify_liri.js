@@ -1,4 +1,4 @@
-var spotify = require('node-spotify-api');
+var spotify = require('spotify-web-api-node');
 
 var fs = require('fs');
 
@@ -12,29 +12,29 @@ if (process.argv[2] == 'spotify-this-song') {
 };
   
 
-        // spotifyApi.clientCredentialsGrant()
+        spotifyApi.clientCredentialsGrant()
 
-        //     .then(function (data) {
+            .then(function (data) {
 
-        //         spotifyApi.setAccessToken(data.body['access_token']);
-        //     }),
-        //     function (err) {
+                spotifyApi.setAccessToken(data.body['access_token']);
+            }),
+            function (err) {
 
-        //     };
+            };
 
-        // var song = process.argv[3];
+        var song = process.argv[3];
 
-        // function spotifyIt(input) {
+        function spotifyIt(input) {
 
-        // }
-        // spotify.search({
-        //     type: 'track',
-        //     query: 'All the Small Things'
-        // }, function (err, data) {
-        //     if (err) {
-        //         return console.log('Error occurred: ' + err);
-        //     }
+        }
+        spotify.search({
+            type: 'track',
+            query: 'All the Small Things'
+        }, function (err, data) {
+            if (err) {
+                return console.log('Error occurred: ' + err);
+            }
 
-        //     console.log(data);
-        // });
-        // }
+            console.log(data);
+        });
+        

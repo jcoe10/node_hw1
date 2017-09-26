@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/jcoe10/node_hw1#readme",
   "dependencies": {
-    "node-spotify-api": "^1.0.7",
     "request": "^2.82.0",
     "spotify-web-api-node": "^2.5.0",
     "twitter": "^1.7.1"
