@@ -1,7 +1,7 @@
 {
   "name": "node_hw1",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node app utilizing 3 apis to answer a question for each one.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/jcoe10/node_hw1/issues"
   },
-  "homepage": "https://github.com/jcoe10/node_hw1#readme"
+  "homepage": "https://github.com/jcoe10/node_hw1#readme",
+  "dependencies": {
+    "node-spotify-api": "^1.0.7",
+    "request": "^2.82.0",
+    "spotify": "^0.3.0",
+    "spotify-web-api-node": "^2.5.0",
+    "twitter": "^1.7.1"
+  }
 }
