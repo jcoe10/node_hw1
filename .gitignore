@@ -57,7 +57,9 @@ typings/
 # dotenv environment variables file
 .env
 
-keys.js
+twitter_keys.js
+
+spotify_keys.js
 
 
 
